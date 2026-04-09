@@ -1,14 +1,14 @@
-// ==============================
+// =====================================
 // 📦 DATA VARIAN PRODUK
-// ==============================
+// =====================================
 
 const variants = {
 
 matcha: {
 
-name: "Sushi Oreo Matcha 🌸",
+name: "Sushi Oreo",
 
-price: "Rp 15000",
+price: "Rp 10000",
 
 images: [
 
@@ -22,9 +22,9 @@ images: [
 
 choco: {
 
-name: "Sushi Oreo Chocolate ⚫",
+name: "Sushi Red",
 
-price: "Rp 16000",
+price: "Rp 10000",
 
 images: [
 
@@ -42,9 +42,9 @@ let currentVariant = "matcha";
 
 
 
-// ==============================
+// =====================================
 // 🎯 PILIH VARIAN
-// ==============================
+// =====================================
 
 function selectVariant(variant) {
 
@@ -122,9 +122,9 @@ document
 
 
 
-// ==============================
+// =====================================
 // 🖼️ CLICK THUMBNAIL
-// ==============================
+// =====================================
 
 document
 .querySelectorAll(".thumb")
@@ -142,9 +142,9 @@ document
 
 
 
-// ==============================
-// 🛒 ORDER KE WHATSAPP
-// ==============================
+// =====================================
+// 🛒 ORDER KE WHATSAPP (PAKAI LINK LU)
+// =====================================
 
 function orderNow() {
 
@@ -152,7 +152,7 @@ const data = variants[currentVariant];
 
 
 
-// isi pesan otomatis
+// Pesan otomatis
 
 const message =
 
@@ -166,14 +166,14 @@ Terima kasih.`;
 
 
 
-// link WA lu
+// LINK WA LU
 
 const baseURL =
 "https://wa.me/message/YOJJLJO546XKL1";
 
 
 
-// buka WhatsApp
+// Buka WhatsApp
 
 window.open(
 
@@ -189,9 +189,9 @@ encodeURIComponent(message),
 
 
 
-// ==============================
+// =====================================
 // 🌸 HUJAN EMOJI SAKURA
-// ==============================
+// =====================================
 
 function createSakuraEmoji() {
 
@@ -246,7 +246,7 @@ sakura.remove();
 
 
 
-// mulai hujan sakura
+// Jalankan sakura terus
 
 setInterval(
 
